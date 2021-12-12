@@ -14,9 +14,9 @@ io.setup(led1, io.OUT)
 
 while 1:
     # TODO: hook up a photo resistor in place of this
-    # 1pm-5pm turn on
+    # 5pm-5am turn on
     now = datetime.datetime.now(timezone("US/Eastern"))
-    if now.hour >= 12+5 or now.hour <= 12+1:
+    if now.hour >= 12+5 or now.hour <= 5:
         io.output(led1, True)
     else:
         io.output(led1, False)
