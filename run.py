@@ -1,4 +1,4 @@
-#!/user/bin/python
+#!/usr/bin/python
 
 #just a little script to drive the front lights on a timer with the RaspPi Zero W
 
