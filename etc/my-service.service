@@ -1,0 +1,14 @@
+# run in a service, place this file in '/etc/systemd/system/my-service.service'
+# run: systemctl enable my-service
+
+[Unit]
+Description=my-service
+DefaultDependencies=false
+
+[Service]
+Type=oneshot
+ExecStart=/home/pi/git/frontLights/run.py
+Restart=no
+
+[Install]
+WantedBy=sysinit.target
